@@ -13,7 +13,9 @@ namespace RunColditilyExamples
             int[] tenThousand = Enumerable.Range(1, 10000).ToArray();
             int[] thousandStartNeg500 = Enumerable.Range(-500, 1000).ToArray();
 
-            Console.WriteLine(CodilitySolutions.BinaryGap.solution(12));
+            Console.WriteLine(CodilitySolutions.MaxCounters.solution(5, new int[] { 3,4,4,6,1,4,4 }));
+
+            Console.WriteLine(CodilitySolutions.MaxCounters.solution(0, new int[] { 3, 4, 4, 6, 1, 4, 4 }));
         }
     }
 }
