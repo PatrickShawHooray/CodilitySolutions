@@ -2,27 +2,29 @@
 
 namespace CodilitySolutions
 {
-    static public class CountCars
+    static public class PassingCars
     {
         public static int Solution(int[] A)
         {
+            // if only one car, they never pass another car
             if (A.Length < 2)
                 return 0;
 
-            int sum = 0;
+            int ret = 0;
+
+            // sum all the ones
             int ones = A.Sum();
 
-            // sum 1s and copy to countOnes
-            // add sum + countOnes when 0 ... reduce countOnes on 1
+            // add sum to return when 0 ... reduce ones when 1
             for (int i = 0; i < A.Length; i++)
             {
                 if (A[i] == 0)
-                    sum += ones;
+                    ret += ones;
                 else
                     ones--;
             }
 
-            return sum <= 1000000000 ? sum : -1;
+            return ret > -1 && ret <= 1000000000 ? ret : -1;
         }
     }
 }
