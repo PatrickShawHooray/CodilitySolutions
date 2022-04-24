@@ -13,7 +13,7 @@ namespace RunColditilyExamples
             int[] tenThousand = Enumerable.Range(1, 10000).ToArray();
             int[] thousandStartNeg500 = Enumerable.Range(-500, 1000).ToArray();
 
-            Console.WriteLine(CodilitySolutions.Nesting.solution("()(("));
+            Console.WriteLine(CodilitySolutions.StoneWall.solution(new int[] { 8,8,5,7,9,8,7,4,8 }));
         }
     }
 }
