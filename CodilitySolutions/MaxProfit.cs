@@ -28,6 +28,7 @@ namespace CodilitySolutions
                 if (accumulator > bestProfit)
                     bestProfit = accumulator;
             }
+
             return bestProfit;
         }
     }
