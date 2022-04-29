@@ -13,7 +13,7 @@ namespace RunColditilyExamples
             int[] tenThousand = Enumerable.Range(1, 10000).ToArray();
             int[] thousandStartNeg500 = Enumerable.Range(-500, 1000).ToArray();
 
-            Console.WriteLine(CodilitySolutions.MaxProfit.solution2(new int[] { 23171, 21011, 21123, 21366, 21013, 21367 }));
+            Console.WriteLine(CodilitySolutions.MaxSliceSum.solution(new int[] { 3,2,-6,4,0 }));
         }
     }
 }
