@@ -13,7 +13,7 @@ namespace RunColditilyExamples
             int[] tenThousand = Enumerable.Range(1, 10000).ToArray();
             int[] thousandStartNeg500 = Enumerable.Range(-500, 1000).ToArray();
 
-            Console.WriteLine(CodilitySolutions.CountFactors.solution(24));
+            Console.WriteLine(CodilitySolutions.MinPerimeterRectangle.solution(48));
         }
     }
 }
