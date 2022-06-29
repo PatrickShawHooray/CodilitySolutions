@@ -13,7 +13,7 @@ namespace RunColditilyExamples
             int[] tenThousand = Enumerable.Range(1, 10000).ToArray();
             int[] thousandStartNeg500 = Enumerable.Range(-500, 1000).ToArray();
 
-            Console.WriteLine(CodilitySolutions.CountNonDivisble.solution(new int[] { 3,1,2,3,6}));
+            Console.WriteLine(CodilitySolutions.ChocolatesByNumber.solution2(10, 4));  
         }
     }
 }
